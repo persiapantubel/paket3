@@ -4,68 +4,18 @@ export const questions: Question[] = [
   {
     id: 1,
     title: "Soal 1 - Pola Pergeseran & Transformasi",
-    boxes: [
-      {
-        tl: { type: 'trapesium', filled: false },
-        tr: { type: 'elips', filled: true },
-        bl: { type: 'tambah', filled: true, dots: 0 },
-        br: { type: 'jajargenjang', filled: false, rotation: 'horizontal' }
-      },
-      {
-        tl: { type: 'elips', filled: false },
-        tr: { type: 'jajargenjang', filled: true, rotation: 'vertical' },
-        bl: { type: 'trapesium', filled: true },
-        br: { type: 'tambah', filled: false, dots: 0 }
-      },
-      {
-        tl: { type: 'jajargenjang', filled: false, rotation: 'horizontal' },
-        tr: { type: 'tambah', filled: true, dots: 0 },
-        bl: { type: 'elips', filled: true },
-        br: { type: 'trapesium', filled: false }
-      },
-      {
-        tl: { type: 'tambah', filled: false, dots: 0 },
-        tr: { type: 'trapesium', filled: true },
-        bl: { type: 'jajargenjang', filled: true, rotation: 'vertical' },
-        br: { type: 'elips', filled: false }
-      }
-    ],
-    options: [
-      {
-        label: 'A',
-        tl: { type: 'trapesium', filled: false },
-        tr: { type: 'elips', filled: false },
-        bl: { type: 'tambah', filled: true, dots: 0 },
-        br: { type: 'jajargenjang', filled: false, rotation: 'vertical' }
-      },
-      {
-        label: 'B',
-        tl: { type: 'elips', filled: true },
-        tr: { type: 'trapesium', filled: false },
-        bl: { type: 'jajargenjang', filled: true, rotation: 'horizontal' },
-        br: { type: 'tambah', filled: false, dots: 0 }
-      },
-      {
-        label: 'C',
-        tl: { type: 'trapesium', filled: false },
-        tr: { type: 'elips', filled: true },
-        bl: { type: 'tambah', filled: true, dots: 0 },
-        br: { type: 'jajargenjang', filled: false, rotation: 'horizontal' }
-      },
-      {
-        label: 'D',
-        tl: { type: 'trapesium', filled: false },
-        tr: { type: 'elips', filled: true },
-        bl: { type: 'tambah', filled: true, dots: 0 },
-        br: { type: 'jajargenjang', filled: false, rotation: 'horizontal' }
-      },
-      {
-        label: 'E',
-        tl: { type: 'tambah', filled: false, dots: 0 },
-        tr: { type: 'trapesium', filled: true },
-        bl: { type: 'elips', filled: true },
-        br: { type: 'jajargenjang', filled: false, rotation: 'vertical' }
-      }
+boxes: [
+  { tl: { t: 'kapsul', f: false }, tr: { t: 'tetes_air', f: false, rot: 'atas' }, bl: { t: 'bintang_4', f: true }, br: { t: 'segi_enam', f: true, garis: 1 } },
+  { tl: { t: 'segi_enam', f: false, garis: 2 }, tr: { t: 'kapsul', f: true }, bl: { t: 'tetes_air', f: false, rot: 'kiri' }, br: { t: 'bintang_4', f: true } },
+  { tl: { t: 'bintang_4', f: true }, tr: { t: 'segi_enam', f: true, garis: 3 }, bl: { t: 'kapsul', f: false }, br: { t: 'tetes_air', f: false, rot: 'bawah' } },
+  { tl: { t: 'tetes_air', f: false, rot: 'kanan' }, tr: { t: 'bintang_4', f: true }, bl: { t: 'segi_enam', f: false, garis: 4 }, br: { t: 'kapsul', f: true } },
+],
+options: [
+  { label: 'A', tl: { t: 'kapsul', f: true }, tr: { t: 'tetes_air', f: false, rot: 'bawah' }, bl: { t: 'bintang_4', f: false }, br: { t: 'segi_enam', f: true, garis: 5 } },
+  { label: 'B', tl: { t: 'kapsul', f: false }, tr: { t: 'tetes_air', f: true, rot: 'atas' }, bl: { t: 'bintang_4', f: true }, br: { t: 'segi_enam', f: false, garis: 5 } },
+  { label: 'C', tl: { t: 'kapsul', f: false }, tr: { t: 'tetes_air', f: false, rot: 'kanan' }, bl: { t: 'bintang_4', f: true }, br: { t: 'segi_enam', f: true, garis: 4 } },
+  { label: 'D', tl: { t: 'kapsul', f: false }, tr: { t: 'tetes_air', f: false, rot: 'atas' }, bl: { t: 'bintang_4', f: true }, br: { t: 'segi_enam', f: true, garis: 5 } },
+  { label: 'E', tl: { t: 'kapsul', f: false }, tr: { t: 'tetes_air', f: false, rot: 'atas' }, bl: { t: 'bintang_4', f: false }, br: { t: 'segi_enam', f: true, garis: 6 } },
     ],
     correctAnswer: 'C',
     rules: [
@@ -84,69 +34,18 @@ export const questions: Question[] = [
   {
     id: 2,
     title: "Soal 2 - Pertukaran Diagonal & Rotasi",
-    boxes: [
-      {
-        tl: { type: 'hati', filled: false },
-        tr: { type: 'panah', rotation: '0' },
-        bl: { type: 'bulan', direction: 'left' },
-        br: { type: 'bunga', petals: 8 }
-      },
-      {
-        tl: { type: 'bunga', petals: 7 },
-        tr: { type: 'panah', rotation: '45' },
-        bl: { type: 'bulan', direction: 'right' },
-        br: { type: 'hati', filled: false }
-      },
-      {
-        tl: { type: 'bunga', petals: 6 },
-        tr: { type: 'bulan', direction: 'left' },
-        bl: { type: 'panah', rotation: '90' },
-        br: { type: 'hati', filled: false }
-      },
-      {
-        tl: { type: 'hati', filled: false },
-        tr: { type: 'bulan', direction: 'right' },
-        bl: { type: 'panah', rotation: '135' },
-        br: { type: 'bunga', petals: 5 }
-      }
-    ],
-    options: [
-      {
-        label: 'A',
-        tl: { type: 'hati', filled: false },
-        tr: { type: 'bulan', direction: 'left' },
-        bl: { type: 'panah', rotation: '180' },
-        br: { type: 'bunga', petals: 4 }
-      },
-      {
-        label: 'B',
-        tl: { type: 'bunga', petals: 4 },
-        tr: { type: 'panah', rotation: '180' },
-        bl: { type: 'bulan', direction: 'right' },
-        br: { type: 'hati', filled: false }
-      },
-      {
-        label: 'C',
-        tl: { type: 'hati', filled: false },
-        tr: { type: 'panah', rotation: '135' },
-        bl: { type: 'bulan', direction: 'left' },
-        br: { type: 'bunga', petals: 4 }
-      },
-      {
-        label: 'D',
-        tl: { type: 'hati', filled: false },
-        tr: { type: 'panah', rotation: '180' },
-        bl: { type: 'bulan', direction: 'right' },
-        br: { type: 'bunga', petals: 4 }
-      },
-      {
-        label: 'E',
-        tl: { type: 'hati', filled: false },
-        tr: { type: 'panah', rotation: '180' },
-        bl: { type: 'bulan', direction: 'left' },
-        br: { type: 'bunga', petals: 4 }
-      }
-    ],
+boxes: [
+  { tl: { t: 'lensa', f: true }, tr: { t: 'layang_layang', f: true, rot: 'atas' }, bl: { t: 'pita', f: true, ekor: 2 }, br: { t: 'segi_delapan', f: false } },
+  { tl: { t: 'layang_layang', f: false, rot: 'bawah' }, tr: { t: 'lensa', f: false }, bl: { t: 'segi_delapan', f: true }, br: { t: 'pita', f: false, ekor: 3 } },
+  { tl: { t: 'segi_delapan', f: false }, tr: { t: 'pita', f: true, ekor: 4 }, bl: { t: 'layang_layang', f: true, rot: 'atas' }, br: { t: 'lensa', f: true } },
+  { tl: { t: 'pita', f: false, ekor: 5 }, tr: { t: 'segi_delapan', f: true }, bl: { t: 'lensa', f: false }, br: { t: 'layang_layang', f: false, rot: 'bawah' } },
+],
+options: [
+  { label: 'A', tl: { t: 'lensa', f: true }, tr: { t: 'layang_layang', f: true, rot: 'atas' }, bl: { t: 'pita', f: true, ekor: 6 }, br: { t: 'segi_delapan', f: false } },
+  { label: 'B', tl: { t: 'lensa', f: false }, tr: { t: 'layang_layang', f: false, rot: 'bawah' }, bl: { t: 'pita', f: false, ekor: 6 }, br: { t: 'segi_delapan', f: true } },
+  { label: 'C', tl: { t: 'layang_layang', f: true, rot: 'atas' }, tr: { t: 'lensa', f: true }, bl: { t: 'segi_delapan', f: false }, br: { t: 'pita', f: true, ekor: 6 } },
+  { label: 'D', tl: { t: 'lensa', f: true }, tr: { t: 'layang_layang', f: true, rot: 'atas' }, bl: { t: 'pita', f: true, ekor: 5 }, br: { t: 'segi_delapan', f: false } },
+  { label: 'E', tl: { t: 'pita', f: true, ekor: 6 }, tr: { t: 'segi_delapan', f: false }, bl: { t: 'layang_layang', f: true, rot: 'atas' }, br: { t: 'lensa', f: true } },    ],
     correctAnswer: 'E',
     rules: [
       "Pertukaran: Bergiliran Kiri Atas↔Kanan Bawah, lalu Kanan Atas↔Kiri Bawah",
@@ -164,68 +63,18 @@ export const questions: Question[] = [
   {
     id: 3,
     title: "Soal 3 - Jalur Z & Transformasi",
-    boxes: [
-      {
-        tl: { type: 'silinder', filled: false, position: 'vertical' },
-        tr: { type: 'kerucut', filled: false },
-        bl: { type: 'kubus', filled: true, points: 0 },
-        br: { type: 'piramida', filled: false }
-      },
-      {
-        tl: { type: 'piramida', filled: false },
-        tr: { type: 'silinder', filled: false, position: 'horizontal' },
-        bl: { type: 'kerucut', filled: true },
-        br: { type: 'kubus', filled: false, points: 0 }
-      },
-      {
-        tl: { type: 'kubus', filled: false, points: 0 },
-        tr: { type: 'piramida', filled: false },
-        bl: { type: 'silinder', filled: true, position: 'vertical' },
-        br: { type: 'kerucut', filled: false }
-      },
-      {
-        tl: { type: 'kerucut', filled: false },
-        tr: { type: 'kubus', filled: false, points: 0 },
-        bl: { type: 'piramida', filled: true },
-        br: { type: 'silinder', filled: false, position: 'horizontal' }
-      }
-    ],
-    options: [
-      {
-        label: 'A',
-        tl: { type: 'silinder', filled: false, position: 'horizontal' },
-        tr: { type: 'kerucut', filled: true },
-        bl: { type: 'kubus', filled: false, points: 0 },
-        br: { type: 'piramida', filled: false }
-      },
-      {
-        label: 'B',
-        tl: { type: 'silinder', filled: false, position: 'vertical' },
-        tr: { type: 'kerucut', filled: false },
-        bl: { type: 'kubus', filled: true, points: 0 },
-        br: { type: 'piramida', filled: false }
-      },
-      {
-        label: 'C',
-        tl: { type: 'silinder', filled: false, position: 'vertical' },
-        tr: { type: 'kerucut', filled: false },
-        bl: { type: 'kubus', filled: false, points: 0 },
-        br: { type: 'piramida', filled: false }
-      },
-      {
-        label: 'D',
-        tl: { type: 'piramida', filled: false },
-        tr: { type: 'silinder', filled: false, position: 'vertical' },
-        bl: { type: 'kerucut', filled: true },
-        br: { type: 'kubus', filled: false, points: 0 }
-      },
-      {
-        label: 'E',
-        tl: { type: 'silinder', filled: true, position: 'vertical' },
-        tr: { type: 'kerucut', filled: false },
-        bl: { type: 'kubus', filled: false, points: 0 },
-        br: { type: 'piramida', filled: false }
-      }
+boxes: [
+  { tl: { t: 'jam_pasir', f: false }, tr: { t: 'mahkota', f: false, titik: 3 }, bl: { t: 'perisai', f: true }, br: { t: 'daun', f: true, rot: 'atas' } },
+  { tl: { t: 'mahkota', f: true, titik: 5 }, tr: { t: 'perisai', f: false }, bl: { t: 'daun', f: false, rot: 'kanan' }, br: { t: 'jam_pasir', f: true } },
+  { tl: { t: 'perisai', f: true }, tr: { t: 'daun', f: true, rot: 'bawah' }, bl: { t: 'jam_pasir', f: false }, br: { t: 'mahkota', f: false, titik: 7 } },
+  { tl: { t: 'daun', f: false, rot: 'kiri' }, tr: { t: 'jam_pasir', f: true }, bl: { t: 'mahkota', f: true, titik: 9 }, br: { t: 'perisai', f: false } },
+],
+options: [
+  { label: 'A', tl: { t: 'jam_pasir', f: false }, tr: { t: 'mahkota', f: false, titik: 10 }, bl: { t: 'perisai', f: true }, br: { t: 'daun', f: true, rot: 'atas' } },
+  { label: 'B', tl: { t: 'jam_pasir', f: false }, tr: { t: 'mahkota', f: false, titik: 11 }, bl: { t: 'perisai', f: true }, br: { t: 'daun', f: true, rot: 'atas' } },
+  { label: 'C', tl: { t: 'jam_pasir', f: true }, tr: { t: 'mahkota', f: true, titik: 11 }, bl: { t: 'perisai', f: false }, br: { t: 'daun', f: false, rot: 'atas' } },
+  { label: 'D', tl: { t: 'jam_pasir', f: false }, tr: { t: 'mahkota', f: false, titik: 11 }, bl: { t: 'perisai', f: true }, br: { t: 'daun', f: true, rot: 'kiri' } },
+  { label: 'E', tl: { t: 'daun', f: true, rot: 'atas' }, tr: { t: 'jam_pasir', f: false }, bl: { t: 'mahkota', f: false, titik: 11 }, br: { t: 'perisai', f: true } },
     ],
     correctAnswer: 'B',
     rules: [
