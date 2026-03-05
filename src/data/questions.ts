@@ -8,23 +8,23 @@ export const questions: Question[] = [
       {
         tl: { type: 'trapesium', filled: false },
         tr: { type: 'elips', filled: true },
-        bl: { type: 'tambah', filled: true, dots: 1 },
+        bl: { type: 'tambah', filled: true, dots: 0 },
         br: { type: 'jajargenjang', filled: false, rotation: 'horizontal' }
       },
       {
         tl: { type: 'elips', filled: false },
         tr: { type: 'jajargenjang', filled: true, rotation: 'vertical' },
         bl: { type: 'trapesium', filled: true },
-        br: { type: 'tambah', filled: false, dots: 2 }
+        br: { type: 'tambah', filled: false, dots: 0 }
       },
       {
         tl: { type: 'jajargenjang', filled: false, rotation: 'horizontal' },
-        tr: { type: 'tambah', filled: true, dots: 3 },
+        tr: { type: 'tambah', filled: true, dots: 0 },
         bl: { type: 'elips', filled: true },
         br: { type: 'trapesium', filled: false }
       },
       {
-        tl: { type: 'tambah', filled: false, dots: 4 },
+        tl: { type: 'tambah', filled: false, dots: 0 },
         tr: { type: 'trapesium', filled: true },
         bl: { type: 'jajargenjang', filled: true, rotation: 'vertical' },
         br: { type: 'elips', filled: false }
@@ -35,7 +35,7 @@ export const questions: Question[] = [
         label: 'A',
         tl: { type: 'trapesium', filled: false },
         tr: { type: 'elips', filled: false },
-        bl: { type: 'tambah', filled: true, dots: 5 },
+        bl: { type: 'tambah', filled: true, dots: 0 },
         br: { type: 'jajargenjang', filled: false, rotation: 'vertical' }
       },
       {
@@ -43,25 +43,25 @@ export const questions: Question[] = [
         tl: { type: 'elips', filled: true },
         tr: { type: 'trapesium', filled: false },
         bl: { type: 'jajargenjang', filled: true, rotation: 'horizontal' },
-        br: { type: 'tambah', filled: false, dots: 5 }
+        br: { type: 'tambah', filled: false, dots: 0 }
       },
       {
         label: 'C',
         tl: { type: 'trapesium', filled: false },
         tr: { type: 'elips', filled: true },
-        bl: { type: 'tambah', filled: true, dots: 5 },
+        bl: { type: 'tambah', filled: true, dots: 0 },
         br: { type: 'jajargenjang', filled: false, rotation: 'horizontal' }
       },
       {
         label: 'D',
         tl: { type: 'trapesium', filled: false },
         tr: { type: 'elips', filled: true },
-        bl: { type: 'tambah', filled: true, dots: 4 },
+        bl: { type: 'tambah', filled: true, dots: 0 },
         br: { type: 'jajargenjang', filled: false, rotation: 'horizontal' }
       },
       {
         label: 'E',
-        tl: { type: 'tambah', filled: false, dots: 5 },
+        tl: { type: 'tambah', filled: false, dots: 0 },
         tr: { type: 'trapesium', filled: true },
         bl: { type: 'elips', filled: true },
         br: { type: 'jajargenjang', filled: false, rotation: 'vertical' }
@@ -168,24 +168,24 @@ export const questions: Question[] = [
       {
         tl: { type: 'silinder', filled: false, position: 'vertical' },
         tr: { type: 'kerucut', filled: false },
-        bl: { type: 'kubus', filled: true, points: 2 },
+        bl: { type: 'kubus', filled: true, points: 0 },
         br: { type: 'piramida', filled: false }
       },
       {
         tl: { type: 'piramida', filled: false },
         tr: { type: 'silinder', filled: false, position: 'horizontal' },
         bl: { type: 'kerucut', filled: true },
-        br: { type: 'kubus', filled: false, points: 4 }
+        br: { type: 'kubus', filled: false, points: 0 }
       },
       {
-        tl: { type: 'kubus', filled: false, points: 6 },
+        tl: { type: 'kubus', filled: false, points: 0 },
         tr: { type: 'piramida', filled: false },
         bl: { type: 'silinder', filled: true, position: 'vertical' },
         br: { type: 'kerucut', filled: false }
       },
       {
         tl: { type: 'kerucut', filled: false },
-        tr: { type: 'kubus', filled: false, points: 8 },
+        tr: { type: 'kubus', filled: false, points: 0 },
         bl: { type: 'piramida', filled: true },
         br: { type: 'silinder', filled: false, position: 'horizontal' }
       }
@@ -195,21 +195,21 @@ export const questions: Question[] = [
         label: 'A',
         tl: { type: 'silinder', filled: false, position: 'horizontal' },
         tr: { type: 'kerucut', filled: true },
-        bl: { type: 'kubus', filled: false, points: 10 },
+        bl: { type: 'kubus', filled: false, points: 0 },
         br: { type: 'piramida', filled: false }
       },
       {
         label: 'B',
         tl: { type: 'silinder', filled: false, position: 'vertical' },
         tr: { type: 'kerucut', filled: false },
-        bl: { type: 'kubus', filled: true, points: 10 },
+        bl: { type: 'kubus', filled: true, points: 0 },
         br: { type: 'piramida', filled: false }
       },
       {
         label: 'C',
         tl: { type: 'silinder', filled: false, position: 'vertical' },
         tr: { type: 'kerucut', filled: false },
-        bl: { type: 'kubus', filled: true, points: 8 },
+        bl: { type: 'kubus', filled: true, points: 0 },
         br: { type: 'piramida', filled: false }
       },
       {
@@ -217,13 +217,13 @@ export const questions: Question[] = [
         tl: { type: 'piramida', filled: false },
         tr: { type: 'silinder', filled: false, position: 'vertical' },
         bl: { type: 'kerucut', filled: true },
-        br: { type: 'kubus', filled: false, points: 10 }
+        br: { type: 'kubus', filled: false, points: 0 }
       },
       {
         label: 'E',
         tl: { type: 'silinder', filled: true, position: 'vertical' },
         tr: { type: 'kerucut', filled: false },
-        bl: { type: 'kubus', filled: false, points: 10 },
+        bl: { type: 'kubus', filled: false, points: 0 },
         br: { type: 'piramida', filled: false }
       }
     ],
