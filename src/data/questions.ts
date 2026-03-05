@@ -209,7 +209,7 @@ export const questions: Question[] = [
         label: 'C',
         tl: { type: 'silinder', filled: false, position: 'vertical' },
         tr: { type: 'kerucut', filled: false },
-        bl: { type: 'kubus', filled: true, points: 0 },
+        bl: { type: 'kubus', filled: false, points: 0 },
         br: { type: 'piramida', filled: false }
       },
       {
