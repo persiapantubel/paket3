@@ -3,242 +3,243 @@ import type { Question } from '@/types/question';
 export const questions: Question[] = [
   {
     id: 1,
-    title: "Soal 1 - Pola Pergeseran & Transformasi",
+    title: "Soal 1 - Pola Jam Pasir & Rotasi",
     boxes: [
       {
-        tl: { type: 'trapesium', filled: false },
-        tr: { type: 'elips', filled: true },
-        bl: { type: 'tambah', filled: true, dots: 1 },
-        br: { type: 'jajargenjang', filled: false, rotation: 'horizontal' }
+        tl: { type: 'kapsul', filled: false },
+        tr: { type: 'tetes_air', filled: false, rotation: 'atas' },
+        bl: { type: 'bintang_4', filled: true },
+        br: { type: 'segi_enam', filled: true, lines: 1 }
       },
       {
-        tl: { type: 'elips', filled: false },
-        tr: { type: 'jajargenjang', filled: true, rotation: 'vertical' },
-        bl: { type: 'trapesium', filled: true },
-        br: { type: 'tambah', filled: false, dots: 2 }
+        tl: { type: 'segi_enam', filled: false, lines: 2 },
+        tr: { type: 'kapsul', filled: true },
+        bl: { type: 'tetes_air', filled: false, rotation: 'kiri' },
+        br: { type: 'bintang_4', filled: true }
       },
       {
-        tl: { type: 'jajargenjang', filled: false, rotation: 'horizontal' },
-        tr: { type: 'tambah', filled: true, dots: 3 },
-        bl: { type: 'elips', filled: true },
-        br: { type: 'trapesium', filled: false }
+        tl: { type: 'bintang_4', filled: true },
+        tr: { type: 'segi_enam', filled: true, lines: 3 },
+        bl: { type: 'kapsul', filled: false },
+        br: { type: 'tetes_air', filled: false, rotation: 'bawah' }
       },
       {
-        tl: { type: 'tambah', filled: false, dots: 4 },
-        tr: { type: 'trapesium', filled: true },
-        bl: { type: 'jajargenjang', filled: true, rotation: 'vertical' },
-        br: { type: 'elips', filled: false }
+        tl: { type: 'tetes_air', filled: false, rotation: 'kanan' },
+        tr: { type: 'bintang_4', filled: true },
+        bl: { type: 'segi_enam', filled: false, lines: 4 },
+        br: { type: 'kapsul', filled: true }
       }
     ],
     options: [
       {
         label: 'A',
-        tl: { type: 'trapesium', filled: false },
-        tr: { type: 'elips', filled: false },
-        bl: { type: 'tambah', filled: true, dots: 5 },
-        br: { type: 'jajargenjang', filled: false, rotation: 'vertical' }
+        tl: { type: 'kapsul', filled: true },
+        tr: { type: 'tetes_air', filled: false, rotation: 'bawah' },
+        bl: { type: 'bintang_4', filled: false },
+        br: { type: 'segi_enam', filled: true, lines: 5 }
       },
       {
         label: 'B',
-        tl: { type: 'elips', filled: true },
-        tr: { type: 'trapesium', filled: false },
-        bl: { type: 'jajargenjang', filled: true, rotation: 'horizontal' },
-        br: { type: 'tambah', filled: false, dots: 5 }
+        tl: { type: 'kapsul', filled: false },
+        tr: { type: 'tetes_air', filled: true, rotation: 'atas' },
+        bl: { type: 'bintang_4', filled: true },
+        br: { type: 'segi_enam', filled: false, lines: 5 }
       },
       {
         label: 'C',
-        tl: { type: 'trapesium', filled: false },
-        tr: { type: 'elips', filled: true },
-        bl: { type: 'tambah', filled: true, dots: 5 },
-        br: { type: 'jajargenjang', filled: false, rotation: 'horizontal' }
+        tl: { type: 'kapsul', filled: false },
+        tr: { type: 'tetes_air', filled: false, rotation: 'kanan' },
+        bl: { type: 'bintang_4', filled: true },
+        br: { type: 'segi_enam', filled: true, lines: 4 }
       },
       {
         label: 'D',
-        tl: { type: 'trapesium', filled: false },
-        tr: { type: 'elips', filled: true },
-        bl: { type: 'tambah', filled: true, dots: 4 },
-        br: { type: 'jajargenjang', filled: false, rotation: 'horizontal' }
+        tl: { type: 'kapsul', filled: false },
+        tr: { type: 'tetes_air', filled: false, rotation: 'atas' },
+        bl: { type: 'bintang_4', filled: true },
+        br: { type: 'segi_enam', filled: true, lines: 5 }
       },
       {
         label: 'E',
-        tl: { type: 'tambah', filled: false, dots: 5 },
-        tr: { type: 'trapesium', filled: true },
-        bl: { type: 'elips', filled: true },
-        br: { type: 'jajargenjang', filled: false, rotation: 'vertical' }
+        tl: { type: 'kapsul', filled: false },
+        tr: { type: 'tetes_air', filled: false, rotation: 'atas' },
+        bl: { type: 'bintang_4', filled: false },
+        br: { type: 'segi_enam', filled: true, lines: 6 }
       }
     ],
-    correctAnswer: 'C',
+    correctAnswer: 'D',
     rules: [
-      "Pergeseran: Keempat bangun bergeser berlawanan arah jarum jam setiap kotak",
-      "Warna: Bangun di Kanan Atas & Kiri Bawah selalu HITAM",
-      "Rotasi: Jajar Genjang berputar 90° setiap kotak (mendatar↔tegak)",
-      "Atribut: Tanda Tambah bertambah 1 titik setiap kotak"
+      "Pergeseran: Pola jam pasir (Kiri Atas → Kanan Atas → Kiri Bawah → Kanan Bawah → Kiri Atas)",
+      "Rotasi: Tetes Air berputar 90° berlawanan arah jarum jam (atas→kiri→bawah→kanan→atas)",
+      "Warna: Bintang 4 selalu HITAM, Tetes Air selalu PUTIH, Kapsul & Segi Enam bergantian",
+      "Garis: Segi Enam bertambah 1 garis setiap kotak"
     ],
     explanation: [
-      "Pertama, perhatikan aturan pergeseran posisi. Keempat bangun selalu bergeser berlawanan arah jarum jam sebanyak satu posisi setiap kali berpindah kotak.",
-      "Kedua, perhatikan pola warna bersyarat. Bangun di posisi Kanan Atas dan Kiri Bawah akan selalu berubah warna menjadi Hitam pekat.",
-      "Ketiga, perhatikan rotasi Jajar Genjang. Bangun Jajar Genjang selalu berputar 90 derajat setiap berpindah kotak, bergantian antara posisi mendatar dan tegak.",
-      "Keempat, perhatikan atribut Tanda Tambah. Terdapat titik hitam di ujung lengannya yang jumlahnya bertambah satu buah secara konstan setiap pindah kotak."
+      "Pertama, perhatikan rute pergeseran yang membentuk pola jam pasir. Bangun di Kiri Atas berpindah ke Kanan Atas, lalu menyilang ke Kiri Bawah, ke Kanan Bawah, dan kembali ke Kiri Atas.",
+      "Kedua, perhatikan rotasi spesifik pada Tetes Air. Bangun Tetes Air selalu berputar 90 derajat berlawanan arah jarum jam. Pada Kotak 4 menunjuk ke kanan, maka Kotak 5 wajib ke atas.",
+      "Ketiga, perhatikan pola warna yang berbasis pada bentuk. Bintang 4 selalu HITAM, Tetes Air selalu PUTIH. Kapsul dan Segi Enam bergantian warna setiap kotak.",
+      "Keempat, perhatikan atribut garis dalam Segi Enam. Jumlah garis selalu bertambah satu: 1→2→3→4, maka Kotak 5 = 5 garis."
     ]
   },
   {
     id: 2,
-    title: "Soal 2 - Pertukaran Diagonal & Rotasi",
+    title: "Soal 2 - Pertukaran Sumbu & Warna Kelompok",
     boxes: [
       {
-        tl: { type: 'hati', filled: false },
-        tr: { type: 'panah', rotation: '0' },
-        bl: { type: 'bulan', direction: 'left' },
-        br: { type: 'bunga', petals: 8 }
+        tl: { type: 'lensa', filled: true },
+        tr: { type: 'layang_layang', filled: true, rotation: 'atas' },
+        bl: { type: 'pita', filled: true, tails: 2 },
+        br: { type: 'segi_delapan', filled: false }
       },
       {
-        tl: { type: 'bunga', petals: 7 },
-        tr: { type: 'panah', rotation: '45' },
-        bl: { type: 'bulan', direction: 'right' },
-        br: { type: 'hati', filled: false }
+        tl: { type: 'layang_layang', filled: false, rotation: 'bawah' },
+        tr: { type: 'lensa', filled: false },
+        bl: { type: 'segi_delapan', filled: true },
+        br: { type: 'pita', filled: false, tails: 3 }
       },
       {
-        tl: { type: 'bunga', petals: 6 },
-        tr: { type: 'bulan', direction: 'left' },
-        bl: { type: 'panah', rotation: '90' },
-        br: { type: 'hati', filled: false }
+        tl: { type: 'segi_delapan', filled: false },
+        tr: { type: 'pita', filled: true, tails: 4 },
+        bl: { type: 'layang_layang', filled: true, rotation: 'atas' },
+        br: { type: 'lensa', filled: true }
       },
       {
-        tl: { type: 'hati', filled: false },
-        tr: { type: 'bulan', direction: 'right' },
-        bl: { type: 'panah', rotation: '135' },
-        br: { type: 'bunga', petals: 5 }
+        tl: { type: 'pita', filled: false, tails: 5 },
+        tr: { type: 'segi_delapan', filled: true },
+        bl: { type: 'lensa', filled: false },
+        br: { type: 'layang_layang', filled: false, rotation: 'bawah' }
       }
     ],
     options: [
       {
         label: 'A',
-        tl: { type: 'hati', filled: false },
-        tr: { type: 'bulan', direction: 'left' },
-        bl: { type: 'panah', rotation: '180' },
-        br: { type: 'bunga', petals: 4 }
+        tl: { type: 'lensa', filled: true },
+        tr: { type: 'layang_layang', filled: true, rotation: 'atas' },
+        bl: { type: 'pita', filled: true, tails: 6 },
+        br: { type: 'segi_delapan', filled: false }
       },
       {
         label: 'B',
-        tl: { type: 'bunga', petals: 4 },
-        tr: { type: 'panah', rotation: '180' },
-        bl: { type: 'bulan', direction: 'right' },
-        br: { type: 'hati', filled: false }
+        tl: { type: 'lensa', filled: false },
+        tr: { type: 'layang_layang', filled: false, rotation: 'bawah' },
+        bl: { type: 'pita', filled: false, tails: 6 },
+        br: { type: 'segi_delapan', filled: true }
       },
       {
         label: 'C',
-        tl: { type: 'hati', filled: false },
-        tr: { type: 'panah', rotation: '135' },
-        bl: { type: 'bulan', direction: 'left' },
-        br: { type: 'bunga', petals: 4 }
+        tl: { type: 'layang_layang', filled: true, rotation: 'atas' },
+        tr: { type: 'lensa', filled: true },
+        bl: { type: 'segi_delapan', filled: false },
+        br: { type: 'pita', filled: true, tails: 6 }
       },
       {
         label: 'D',
-        tl: { type: 'hati', filled: false },
-        tr: { type: 'panah', rotation: '180' },
-        bl: { type: 'bulan', direction: 'right' },
-        br: { type: 'bunga', petals: 4 }
+        tl: { type: 'lensa', filled: true },
+        tr: { type: 'layang_layang', filled: true, rotation: 'atas' },
+        bl: { type: 'pita', filled: true, tails: 5 },
+        br: { type: 'segi_delapan', filled: false }
       },
       {
         label: 'E',
-        tl: { type: 'hati', filled: false },
-        tr: { type: 'panah', rotation: '180' },
-        bl: { type: 'bulan', direction: 'left' },
-        br: { type: 'bunga', petals: 4 }
+        tl: { type: 'pita', filled: true, tails: 6 },
+        tr: { type: 'segi_delapan', filled: false },
+        bl: { type: 'layang_layang', filled: true, rotation: 'atas' },
+        br: { type: 'lensa', filled: true }
       }
     ],
-    correctAnswer: 'E',
+    correctAnswer: 'A',
     rules: [
-      "Pertukaran: Bergiliran Kiri Atas↔Kanan Bawah, lalu Kanan Atas↔Kiri Bawah",
-      "Rotasi: Tanda Panah berputar 45° searah jarum jam setiap kotak",
-      "Arah: Bulan Sabit membalik arah (kiri↔kanan) setiap kotak",
-      "Kelopak: Bunga berkurang 1 kelopak setiap kotak"
+      "Pertukaran: Bergantian horizontal (Kiri↔Kanan) dan vertikal (Atas↔Bawah)",
+      "Warna: Kotak ganjil = Lensa, Layang-layang, Pita HITAM; Segi Delapan PUTIH",
+      "Rotasi: Layang-layang berputar 180° setiap kotak (atas↔bawah)",
+      "Ekor: Pita bertambah 1 ekor setiap kotak"
     ],
     explanation: [
-      "Pertama, perhatikan pertukaran posisi secara menyilang diagonal. Dari Kotak 1 ke 2: Kiri Atas↔Kanan Bawah. Dari Kotak 2 ke 3: Kanan Atas↔Kiri Bawah. Pola ini berulang.",
-      "Kedua, perhatikan rotasi Tanda Panah. Panah selalu berputar 45 derajat searah jarum jam. Pada Kotak 4 (135°), maka Kotak 5 = 180° (lurus ke bawah).",
-      "Ketiga, perhatikan arah Bulan Sabit. Bulan selalu membalik arah hadapnya setiap kotak. Kotak 4 menghadap kanan, maka Kotak 5 menghadap kiri.",
-      "Keempat, perhatikan jumlah kelopak Bunga. Jumlahnya selalu berkurang satu: 8→7→6→5, maka Kotak 5 = 4 kelopak."
+      "Pertama, perhatikan rute pertukaran posisi yang terjadi secara bergantian sumbu. Kotak 1→2: horizontal, Kotak 2→3: vertikal, Kotak 3→4: horizontal, maka Kotak 4→5: vertikal.",
+      "Kedua, perhatikan warna secara berkelompok. Pada kotak ganjil (1, 3, 5): Lensa, Layang-layang, Pita HITAM; Segi Delapan PUTIH. Pada kotak genap: kebalikannya.",
+      "Ketiga, perhatikan rotasi Layang-layang. Layang-layang berputar 180 derajat di setiap pergeserannya. Kotak 4 menghadap ke bawah, maka Kotak 5 ke atas.",
+      "Keempat, perhatikan jumlah ekor pada Pita. Ekor selalu bertambah satu: 2→3→4→5, maka Kotak 5 = 6 ekor."
     ]
   },
   {
     id: 3,
-    title: "Soal 3 - Jalur Z & Transformasi",
+    title: "Soal 3 - Lompatan Ruang & Warna Lengkung-Lurus",
     boxes: [
       {
-        tl: { type: 'silinder', filled: false, position: 'vertical' },
-        tr: { type: 'kerucut', filled: false },
-        bl: { type: 'kubus', filled: true, points: 2 },
-        br: { type: 'piramida', filled: false }
+        tl: { type: 'jam_pasir', filled: false },
+        tr: { type: 'mahkota', filled: false, points: 3 },
+        bl: { type: 'perisai', filled: true },
+        br: { type: 'daun', filled: true, rotation: 'atas' }
       },
       {
-        tl: { type: 'piramida', filled: false },
-        tr: { type: 'silinder', filled: false, position: 'horizontal' },
-        bl: { type: 'kerucut', filled: true },
-        br: { type: 'kubus', filled: false, points: 4 }
+        tl: { type: 'mahkota', filled: true, points: 5 },
+        tr: { type: 'perisai', filled: false },
+        bl: { type: 'daun', filled: false, rotation: 'kanan' },
+        br: { type: 'jam_pasir', filled: true }
       },
       {
-        tl: { type: 'kubus', filled: false, points: 6 },
-        tr: { type: 'piramida', filled: false },
-        bl: { type: 'silinder', filled: true, position: 'vertical' },
-        br: { type: 'kerucut', filled: false }
+        tl: { type: 'perisai', filled: true },
+        tr: { type: 'daun', filled: true, rotation: 'bawah' },
+        bl: { type: 'jam_pasir', filled: false },
+        br: { type: 'mahkota', filled: false, points: 7 }
       },
       {
-        tl: { type: 'kerucut', filled: false },
-        tr: { type: 'kubus', filled: false, points: 8 },
-        bl: { type: 'piramida', filled: true },
-        br: { type: 'silinder', filled: false, position: 'horizontal' }
+        tl: { type: 'daun', filled: false, rotation: 'kiri' },
+        tr: { type: 'jam_pasir', filled: true },
+        bl: { type: 'mahkota', filled: true, points: 9 },
+        br: { type: 'perisai', filled: false }
       }
     ],
     options: [
       {
         label: 'A',
-        tl: { type: 'silinder', filled: false, position: 'horizontal' },
-        tr: { type: 'kerucut', filled: true },
-        bl: { type: 'kubus', filled: false, points: 10 },
-        br: { type: 'piramida', filled: false }
+        tl: { type: 'jam_pasir', filled: false },
+        tr: { type: 'mahkota', filled: false, points: 10 },
+        bl: { type: 'perisai', filled: true },
+        br: { type: 'daun', filled: true, rotation: 'atas' }
       },
       {
         label: 'B',
-        tl: { type: 'silinder', filled: false, position: 'vertical' },
-        tr: { type: 'kerucut', filled: false },
-        bl: { type: 'kubus', filled: true, points: 10 },
-        br: { type: 'piramida', filled: false }
+        tl: { type: 'jam_pasir', filled: false },
+        tr: { type: 'mahkota', filled: false, points: 11 },
+        bl: { type: 'perisai', filled: true },
+        br: { type: 'daun', filled: true, rotation: 'atas' }
       },
       {
         label: 'C',
-        tl: { type: 'silinder', filled: false, position: 'vertical' },
-        tr: { type: 'kerucut', filled: false },
-        bl: { type: 'kubus', filled: true, points: 8 },
-        br: { type: 'piramida', filled: false }
+        tl: { type: 'jam_pasir', filled: true },
+        tr: { type: 'mahkota', filled: true, points: 11 },
+        bl: { type: 'perisai', filled: false },
+        br: { type: 'daun', filled: false, rotation: 'atas' }
       },
       {
         label: 'D',
-        tl: { type: 'piramida', filled: false },
-        tr: { type: 'silinder', filled: false, position: 'vertical' },
-        bl: { type: 'kerucut', filled: true },
-        br: { type: 'kubus', filled: false, points: 10 }
+        tl: { type: 'jam_pasir', filled: false },
+        tr: { type: 'mahkota', filled: false, points: 11 },
+        bl: { type: 'perisai', filled: true },
+        br: { type: 'daun', filled: true, rotation: 'kiri' }
       },
       {
         label: 'E',
-        tl: { type: 'silinder', filled: true, position: 'vertical' },
-        tr: { type: 'kerucut', filled: false },
-        bl: { type: 'kubus', filled: false, points: 10 },
-        br: { type: 'piramida', filled: false }
+        tl: { type: 'daun', filled: true, rotation: 'atas' },
+        tr: { type: 'jam_pasir', filled: false },
+        bl: { type: 'mahkota', filled: false, points: 11 },
+        br: { type: 'perisai', filled: true }
       }
     ],
     correctAnswer: 'B',
     rules: [
-      "Jalur Z: Kiri Atas→Kanan Atas→Kiri Bawah→Kanan Bawah→Kiri Atas",
-      "Warna: Bangun di Kiri Bawah selalu HITAM",
-      "Orientasi: Silinder bergantian vertical↔horizontal",
-      "Titik: Kubus bertambah 2 titik setiap kotak"
+      "Lompatan: Kiri Atas → Kanan Bawah → Kiri Bawah → Kanan Atas → Kiri Atas",
+      "Warna Lengkung: Daun & Perisai = HITAM di kotak ganjil (1,3,5), PUTIH di genap",
+      "Warna Lurus: Jam Pasir & Mahkota = PUTIH di kotak ganjil, HITAM di genap",
+      "Titik Mahkota: Bertambah 2 setiap kotak (3→5→7→9→11)",
+      "Rotasi Daun: 90° searah jarum jam (atas→kanan→bawah→kiri→atas)"
     ],
     explanation: [
-      "Pertama, perhatikan rute pergerakan elemen yang membentuk jalur huruf Z berulang. Dari Kotak 4 ke Kotak 5, Silinder akan kembali naik menempati posisi Kiri Atas.",
-      "Kedua, perhatikan pola pewarnaan berdasarkan letak ruang. Bangun di Kiri Bawah akan selalu berubah warna menjadi Hitam pekat. Kubus masuk ke Kiri Bawah, maka wajib Hitam.",
-      "Ketiga, perhatikan transformasi orientasi Silinder. Orientasi bergantian antara berdiri tegak dan tidur mendatar. Kotak 4 = mendatar, maka Kotak 5 = tegak.",
-      "Keempat, perhatikan deret aritmatika pada atribut Kubus. Jumlah titik bertambah 2 setiap kotak: 2→4→6→8, maka Kotak 5 = 10 titik."
+      "Pertama, perhatikan alur lompatan ruang. Seluruh bangun bergeser dengan pola: Kiri Atas → Kanan Bawah → Kiri Bawah → Kanan Atas → Kiri Atas.",
+      "Kedua, perhatikan pola warna berdasarkan jenis garis. Bangun lengkung (Daun, Perisai) HITAM di kotak ganjil. Bangun lurus (Jam Pasir, Mahkota) PUTIH di kotak ganjil.",
+      "Ketiga, perhatikan jumlah titik runcing pada Mahkota. Jumlahnya bertambah 2 setiap kotak: 3→5→7→9, maka Kotak 5 = 11 titik.",
+      "Keempat, perhatikan rotasi Daun. Daun berputar 90 derajat searah jarum jam. Kotak 4 menunjuk ke kiri, maka Kotak 5 kembali ke atas."
     ]
   }
 ];
